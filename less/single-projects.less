@@ -1,0 +1,150 @@
+.single-project{
+    .project-description{
+        .projectImages{
+            position: relative;
+            margin-bottom: 10px;
+            .projectImgSlider{
+                border: none;
+                border-radius: 3px;
+                position: relative;
+                z-index: 2;
+                overflow: hidden;
+                width: ~"calc(100% - 10px)";
+                .flex-direction-nav{
+                    &:after{
+                        content: '';
+                        width: 4px;
+                        height: 90px;
+                        background: url('../images/projects/dots.png') no-repeat scroll center center @baseColor;
+                        position: absolute;
+                        bottom: 0;
+                        right: 90px;
+                        opacity: 1 !important;
+                        z-index: 100;
+                                
+                    }
+                    a{
+                        position: absolute;
+                        display: block;
+                        opacity: 1 !important;
+                        width: 90px;
+                        height: 90px;
+                        line-height: 90px;
+                        text-align: center;
+                        background: @baseColor;
+                        border-bottom-left-radius: 0;
+                        color: @baseColor2;
+                        font-size: 48px;
+                        top: auto;
+                        bottom: 0;
+                        margin: 0;
+                        &:before{
+                            display: none;
+                        }
+                        &.flex-prev{
+                            left: auto;
+                            right: 94px;
+                        }
+                        &.flex-next{
+                            right: 0;
+                        }
+                    }
+                }
+            }
+            .thumbnail_bg{
+                position: absolute;
+                width: ~"calc(100% - 10px)";
+                height: 100%;
+                z-index: 0;
+                background: @baseColor;
+                top: 10px;
+                left: 10px;
+                border-radius: 3px;
+            }
+        }
+        .description_row{            
+            color: @baseColor2;
+            h4{
+                font-family: @baseFont3;
+                font-weight: bold;
+                line-height: 1;
+                margin: 30px 0 25px;
+                text-transform: uppercase;
+            }
+            p{
+                font-family: @baseFont;
+                font-weight: normal;
+                line-height: 24px;
+                margin: 0;
+            }
+        }
+    }
+    .project_about{        
+        h4{
+            font-family: @baseFont3;
+            font-weight: bold;
+            line-height: 1;
+            margin: 0 0 20px;
+        }
+        p{
+            font-family: @baseFont;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 0;
+        }
+        dl{
+            margin-bottom: 0;
+            dt{
+                text-align: left;
+                font-family: @baseFont;
+                font-weight: 400;
+                line-height: 30px;
+                margin: 0;
+            }
+            dd{
+                font-family: @baseFont;
+                font-weight: 400;
+                line-height: 30px;
+                margin: 0;
+                font-weight: bold;
+            }
+        }
+        .list-inline{
+            padding: 0;
+            margin: 0;
+            li{
+                padding: 0;
+                & + li{
+                    margin-left: 16px;
+                }
+                a{
+                    font-size: 18px;
+                    color: @baseColor3;
+                    line-height: 1;
+                    &:hover{
+                        color: @baseColor2;
+                    }
+                }
+            }
+        }
+        .aboutRow{
+            margin-bottom: 35px;
+        }
+    }
+}
+
+nav.single_project_nav{
+    .pager{
+        padding: 20px 0 0;
+        border-top: 1px solid  @baseColor5;
+        margin-top: 30px;
+        li{
+            a{
+                font-size: 24px;
+                &:hover{
+                    color: @baseColor2;
+                }
+            }
+        }
+    }
+}
