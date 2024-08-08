@@ -1,0 +1,59 @@
+#whoInCharge{
+    padding-bottom: 0;
+}
+
+.teamSection{
+    position: relative;    
+}
+.team_member{
+    height: 455px;
+    position: relative;
+    cursor: crosshair;
+    .row{
+        .image{
+            text-align: center;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+        }
+        .memberIntro{
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background: @baseColor;
+            top: 0;
+            right: 45%;
+            border-radius: 3px 3px 0 0;
+            z-index: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            .transition();
+            h3,h5{
+                font-family: @baseFont3;
+                color: @baseColor2;
+                margin: 0;
+                transform: rotate(-90deg);
+                position: absolute;
+                bottom: 95px;
+                right: -200px;
+                line-height: 1.2;
+                .transition();
+            }
+            h3{
+                font-weight: bold;
+            }
+            h5{
+                bottom: 75px;
+            }
+        }
+        &:hover{            
+            .memberIntro{
+                width: 45%;
+                right: 0;
+                h3,h5{
+                    right: -30px;
+                }
+            }
+        }
+    }    
+}

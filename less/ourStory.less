@@ -1,0 +1,41 @@
+.ourStory{
+    h4{
+        font-family: @baseFont3;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .media{
+        .media-left{
+            padding: 0;
+            .post_thumbnail_row{
+                width: 270px;
+                padding: 0;
+                .post_thumbnail{
+                    width: ~"calc(100% - 10px)";
+                }
+                .post_thumbnail_bg{
+                    width: ~"calc(100% - 10px)";
+                    top: 10px;
+                    left: 10px;
+                }
+            }
+        }
+        .media-body{
+            padding-left: 25px;
+            color: @baseColor5;
+            font-family: @baseFont;
+            line-height: 24px;
+        }
+    }
+}
+
+#ourStory{
+    .whyChoose{
+        margin-top: 0;
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

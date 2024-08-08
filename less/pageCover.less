@@ -1,0 +1,52 @@
+#pageCover{
+    background: url('../images/pageCover.jpg') no-repeat scroll center 0;
+    padding: 40px 0;
+    position: relative;
+    h3{
+        line-height: 85px;
+        background: fade(#d1af04,20%);
+        width: 160px;
+        padding-left: 15px;
+        display: inline-block;
+        margin: 0;
+        font-family: @baseFont3;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        &:before{
+            content: '';
+            width: ~"calc(50% - 600px)";
+            height: 85px;
+            background: fade(#d1af04,20%);
+            position: absolute;
+            left: 0;
+        }
+    }
+    .pageDirection{
+        width: ~"calc(100% - 160px)";
+        margin-left: 160px;
+        background: fade(#d1af04,20%);
+        &:before{
+            content: '';
+            width: ~"calc(50% - 600px)";
+            height: 35px;
+            background: fade(#d1af04,20%);
+            position: absolute;
+            right: 0;
+        }
+        .breadcrumb{
+            background: none;
+            padding: 0;
+            li{
+                color: #fff;
+                font-family: @baseFont2;
+                font-weight: bold;
+                line-height: 35px;
+                a{
+                    color: #FFF;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

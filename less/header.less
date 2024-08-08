@@ -1,0 +1,184 @@
+header{
+    .topRow{
+        font-size: 12px;
+        font-family: @baseFont3;
+        font-weight: 600;
+        color: @baseColor3;
+        line-height: 50px;
+        background: @baseColor2;
+        .fright{
+            .fleft + .fleft{
+                margin-left: 25px;
+            }
+        }
+    }// Top Area
+    .searchFormRow{
+        background: @baseColor2;
+        border-top: 1px solid darken(@baseColor2,80%);
+        form{
+            .input-group{
+                .form-control{
+                    border-radius: 0;
+                    line-height: 80px;
+                    height: 80px;
+                    background: none;
+                    border-color: transparent;
+                    font-size: 30px;
+                    font-family: @baseFont;
+                    font-weight: 300;
+                    padding: 0 15px;
+                    color: #fff;
+                    &:focus{
+                        box-shadow: none;
+                        background: fade(@baseColor3,20%);
+                        & + .input-group-addon{
+                            background: fade(@baseColor3,20%);
+                        }
+                    }
+                    &::-moz-placeholder,
+                    &:-ms-input-placeholder,
+                    &::-webkit-input-placeholder{
+                        color: #FFF;
+                        opacity: 1;
+                    }
+                }
+                .input-group-addon{
+                    border-radius: 0;
+                    border-color: transparent;
+                    background: none;
+                    font-size: 30px;
+                    padding: 0 15px;
+                    color: #fff;
+                    line-height: 80px;
+                    border: none;
+                }
+            }
+        }
+    } // Search Form Area
+    .bottomRow{
+        .navbar{
+            border: none;
+            background: none;
+            box-shadow: none;
+            .navbar-header{
+                button{
+                    i{}
+                }
+                .navbar-brand{
+                    line-height: 100px;
+                    height: 100px;
+                    padding: 0 15px;
+                    display: block;
+                    img{
+                        display: inline-block;
+                        max-width: 100%;
+                    }
+                }
+            }
+            #mainNav{
+                .nav{
+                    li{
+                        a{
+                            padding: 0 15px;
+                            line-height: 100px;
+                            text-transform: uppercase;
+                            font-family: @baseFont3;
+                            font-weight: 500;
+                            color: @baseColor2;
+                            &:hover{
+                                background: none;
+                                box-shadow: none;
+                                color: @baseColor;
+                            }
+                            &:focus{
+                                background: none;
+                                box-shadow: none;
+                            }
+                        }
+                        &.active{
+                            a{
+                                background: none;
+                                box-shadow: none;
+                                color: @baseColor;
+                                position: relative;
+                                &:after{
+                                    width: 4px;
+                                    height: 4px;
+                                    content: '';
+                                    background: @baseColor;
+                                    display: block;
+                                    position: absolute;
+                                    top: 65px;
+                                    left: ~"calc(50% - 2px)";
+                                    border-radius: 100%;
+                                }
+                            }
+                        }
+                        &.open{
+                            a{
+                                color: @baseColor;
+                                &:after{
+                                    display: none;
+                                }
+                            }
+                        }
+                        &.dropdown,&.open{
+                            a{
+                                background: none;
+                                box-shadow: none;                                
+                            }
+                            .dropdown-menu{
+                                border-radius: 0;
+                                li{
+                                    & + li{
+                                        border-top: 1px solid fade(@baseColor2,10%);
+                                    }
+                                    a{
+                                        line-height: 40px;
+                                        font-family: @baseFont2;
+                                        font-weight: 300;
+                                        color: @baseColor2;
+                                        &:after{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & > li:last-child{
+                        padding: 40px 0;
+                        a{
+                            border-left: 2px dotted @baseColor3;
+                            line-height: 20px;
+                            &:focus{
+                                color: @baseColor2;
+                            }
+                            &.open{
+                                color: @baseColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } // Menu Area
+    &.home2{
+        margin-top: 30px;        
+        .container{
+            border-radius: 3px;
+            background: #fff;
+        }
+        .searchFormRow{
+            position: absolute;
+            padding: 0;
+            border: none;
+            width: 100%;
+            background: none;
+            .container{
+                background: @baseColor2;
+                padding: 0;
+            }
+        } // Search Form Area
+    }
+}

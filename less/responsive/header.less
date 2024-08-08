@@ -1,0 +1,403 @@
+@media (min-width:768px){
+    header{
+        .topRow{
+            .fright{
+                .fleft + .fleft{
+                }
+            }
+        }// Top Area
+        .searchFormRow{
+            form{
+                .input-group{
+                    .form-control{
+                        &:focus{
+                            & + .input-group-addon{
+                            }
+                        }
+                        &::-moz-placeholder,
+                        &:-ms-input-placeholder,
+                        &::-webkit-input-placeholder{
+                        }
+                    }
+                    .input-group-addon{
+                    }
+                }
+            }
+        } // Search Form Area
+        .bottomRow{
+            .navbar{
+                .navbar-header{
+                    #searchTrigger{
+                        display: none;
+                    }
+                    button{
+                        i{}
+                    }
+                    .navbar-brand{
+                        img{
+                        }
+                    }
+                }
+                #mainNav{
+                    .nav{
+                        li{
+                            a{
+                                &:hover,&:focus{
+                                }
+                            }
+                            &.active{
+                                a{
+                                }
+                            }
+                            &.dropdown,&.open{
+                                .dropdown-menu{
+                                    display: block;
+                                    transform: scale(1,0);
+                                    transform-origin: top;
+                                    .transition();
+                                    li{
+                                        a{
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    .dropdown-menu{
+                                        transform: scale(1,1);
+                                        li{
+                                            a{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } // Menu Area        
+        &.home2{
+            .container{
+            }
+            .searchFormRow{
+                .container{
+                }
+            } // Search Form Area
+        }
+    }
+}
+
+@media (max-width:991px){
+    header{
+        .topRow{
+            line-height: 25px;
+            padding: 10px 0;
+            font-weight: 400;
+            .fright{
+                float: left;
+                .fleft + .fleft{
+                }
+            }
+        }// Top Area
+        .searchFormRow{
+            form{
+                .input-group{
+                    .form-control{
+                        &:focus{
+                            & + .input-group-addon{
+                            }
+                        }
+                        &::-moz-placeholder,
+                        &:-ms-input-placeholder,
+                        &::-webkit-input-placeholder{
+                        }
+                    }
+                    .input-group-addon{
+                    }
+                }
+            }
+        } // Search Form Area
+        .bottomRow{
+            .navbar{
+                .navbar-header{
+                    button{
+                        i{}
+                    }
+                    .navbar-brand{
+                        img{
+                        }
+                    }
+                }
+                #mainNav{
+                    .nav{
+                        li{
+                            a{
+                                padding: 0 8px;
+                                &:hover,&:focus{
+                                }
+                            }
+                            &.active{
+                                a{
+                                }
+                            }
+                            &.dropdown,&.open{
+                                .dropdown-menu{
+                                    li{
+                                        a{
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    .dropdown-menu{
+                                        li{
+                                            a{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } // Menu Area      
+        &.home2{
+            .container{
+            }
+            .searchFormRow{
+                .container{
+                }
+            } // Search Form Area
+        }
+    }
+}
+
+@media (max-width:767px){
+    header{
+        .topRow{
+            line-height: 25px;
+            padding: 10px 0;
+            font-weight: 400;
+            .fright{
+                float: left;
+                .fleft + .fleft{
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }// Top Area
+        .searchFormRow{
+            form{
+                .input-group{
+                    .form-control{
+                        &:focus{
+                            & + .input-group-addon{
+                            }
+                        }
+                        &::-moz-placeholder,
+                        &:-ms-input-placeholder,
+                        &::-webkit-input-placeholder{
+                        }
+                    }
+                    .input-group-addon{
+                    }
+                }
+            }
+        } // Search Form Area
+        .bottomRow{
+            .navbar{
+                .navbar-header{
+                    #searchTrigger{
+                        float: right;
+                        background: @baseColor;
+                        font-size: 18px;
+                        margin: 30px 15px 30px 0;
+                        padding: 0 15px;
+                        &.open{                            
+                            background: @baseColor2;
+                            color: #fff;
+                        }
+                    }
+                    button{
+                        border-radius: 0;
+                        font-family: @baseFont3;
+                        border: none;
+                        text-transform: uppercase;
+                        padding: 0 25px;
+                        line-height: 40px;
+                        &.navbar-toggle.collapsed{
+                            background: @baseColor;
+                            color: @baseColor2;
+                        }
+                        &.navbar-toggle{
+                            margin: 30px 10px;
+                            background: @baseColor2;
+                            color: #fff;
+                        }
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                    .navbar-brand{
+                        img{
+                        }
+                    }
+                }
+                #mainNav{
+                    .nav{
+                        padding-bottom: 20px;
+                        li{
+                            a{
+                                line-height: 40px;
+                                &:hover,&:focus{
+                                }
+                            }
+                            &.active{
+                                a{
+                                    background: none;
+                                    &:after{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            &.dropdown,&.open{
+                                .dropdown-menu{
+                                    position: relative;
+                                    width: 100%;
+                                    box-shadow: 0 0 12px fade(@baseColor2,20%);
+                                    li{
+                                        a{
+                                            &:hover{
+                                                color: @baseColor;
+                                            }
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    .dropdown-menu{                                        
+                                        li{
+                                            a{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } // Menu Area      
+        &.home2{
+            margin-top: 0;
+            .container{
+                border-radius: 0;
+            }
+            .searchFormRow{
+                .container{
+                }
+            } // Search Form Area
+        }
+    }
+}
+
+@media (max-width:481px){
+    header{
+        .topRow{
+            .fright{
+                .fleft + .fleft{
+                }
+            }
+        }// Top Area
+        .searchFormRow{
+            form{
+                .input-group{
+                    .form-control{
+                        &:focus{
+                            & + .input-group-addon{
+                            }
+                        }
+                        &::-moz-placeholder,
+                        &:-ms-input-placeholder,
+                        &::-webkit-input-placeholder{
+                        }
+                    }
+                    .input-group-addon{
+                    }
+                }
+            }
+        } // Search Form Area
+        .bottomRow{
+            .navbar{
+                .navbar-header{
+                    text-align: center;
+                    #searchTrigger{
+                        padding: 0 15px;
+                        font-size: 14px;
+                        margin: 0;
+                        border-bottom: 1px solid @baseColor2;
+                        &.open{
+                        }
+                    }
+                    button{
+                        width: 100%;
+                        &.navbar-toggle.collapsed{
+                            margin: 0;
+                        }
+                        &.navbar-toggle{
+                            margin: 0;
+                        }
+                        i{
+                        }
+                    }
+                    .navbar-brand{
+                        display: inline-block;
+                        float: none;
+                        img{
+                        }
+                    }
+                }
+                #mainNav{
+                    .nav{
+                        li{
+                            a{
+                                &:hover,&:focus{
+                                }
+                            }
+                            &.active{
+                                a{
+                                    &:after{
+                                    }
+                                }
+                            }
+                            &.dropdown,&.open{
+                                .dropdown-menu{
+                                    li{
+                                        a{
+                                            &:hover{
+                                            }
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    .dropdown-menu{                                        
+                                        li{
+                                            a{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } // Menu Area      
+        &.home2{
+            .container{
+            }
+            .searchFormRow{
+                .container{
+                }
+            } // Search Form Area
+        }
+    }
+}
