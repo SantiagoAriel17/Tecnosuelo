@@ -101,6 +101,23 @@ body {
 }
 
 
+.dropdown-menu {
+  display: none;
+  margin-top: 10px; /* Ajusta este valor para bajar el menú */
+  
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: animate__animated animate__fadeInDown; /* Añade una animación de entrada */
+}
+
+.dropdown-item {
+  font-size: 14px; /* Aumenta el tamaño de la fuente aquí */
+}
+
+
+
 /*Floating*/
 .fleft {
   float: left;

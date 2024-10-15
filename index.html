@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/owl.carousel/css/owl.carousel.css">    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- JS de jQuery y Bootstrap (necesarios para los componentes de Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -53,43 +53,66 @@
    
 </head>
 <body>
-    <div id="preloader">
+    <!--<div id="preloader">
         <div class="preloader-content">
             <img src="/images/logo.png" alt="Logo" class="preloader-logo">
             
         </div>
-    </div>
+    </div> -->
 
 
   
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-        <img src="images/logo.png" alt="Logo">
-    </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">INICIO</a>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      NOSOTROS
+                  </a>
+                  <div class="dropdown-menu animate__animated animate__fadeInDown" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Presentación</a>
+                      <a class="dropdown-item" href="#">Misión</a>
+                      <a class="dropdown-item" href="#">Visión</a>
+                      <a class="dropdown-item" href="#">Valores</a>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      SERVICIOS
+                  </a>
+                  <div class="dropdown-menu animate__animated animate__fadeInDown" aria-labelledby="navbarDropdown2">
+                      <a class="dropdown-item" href="#">Geotecnia</a>
+                      <a class="dropdown-item" href="#">Geología</a>
+                      <a class="dropdown-item" href="#">Geofísica</a>
+                      <a class="dropdown-item" href="#">Topografía</a>
+                  </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">QUIENES SOMOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">PROYECTOS</a>
-              </li>          
-              <li class="nav-item">
-                <a class="nav-link" href="#">POLITICAS</a>
-              </li>         
-              <li class="nav-item">
-                <a class="nav-link" href="#">GALERIA</a>
-              </li>         
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
-              </li>         
+                <a class="nav-link" href="#">EQUIPOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROYECTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACTO</a>
+      </li>
+
+              <!-- Más ítems del menú -->
+          </ul>
+      </div>
+  </nav>
+  
+  
             <!-- Agrega más opciones aquí -->
           </ul>
         </div>
@@ -134,7 +157,26 @@
 
         <!-- Contenido de la sección -->
       
-      
+        <div class="container my-5" id="inicio-section">
+          <div class="row">
+              <!-- Columna de la imagen -->
+              <div class="col-md-4 text-center">
+                  <img src="/images/b.jpeg" alt="Imagen de la empresa" class="img-fluid">
+              </div>
+              <!-- Columna del texto -->
+              <div class="col-md-8">
+                  <h2 class="font-weight-bold mb-3">Bienvenidos a Nuestra Compañía</h2>
+                  <p><strong>TECNOSUELO</strong> es una empresa con más de 30 años de experiencia en la prestación de servicios profesionales en el área de la Ingeniería Civil. En sus orígenes, se proyecta como una consultora de Ingeniería que supo atender las necesidades de desarrollo de la región.</p>
+                  <p>Hoy, apostando por una mejora continua en la calidad de los servicios profesionales, nuestra empresa está conformada por un equipo multidisciplinario.
+                    <strong>TECNOSUELO</strong> es una empresa con más de 30 años de experiencia en la prestación de servicios profesionales en el área de la Ingeniería Civil.  En sus orígenes, se proyecta como una consultora de Ingeniería que supo atender las necesidades de desarrollo de la región. 
+Hoy, apostando por una mejora continua en la calidad de los servicios profesionales, nuestra empresa está conformada por un equipo multidisciplinario con amplia experiencia en las áreas de la GEOTÉCNIA, GEOLOGÍA, GEOFÍSICA Y TOPOGRAFÍA. 
+Nuestra constante evolución y experiencia, nos posiciona como referentes en servicios de calidad en sectores como minería, agricultura y construcción de todo tipo de obras civiles.
+En <strong>TECNOSUELO</strong> apostamos asiduamente en la gestión de calidad proporcionando idoneidad y aptitud a la hora de cumplir con los requisitos de los clientes, desempeño en los procesos y eficacia en los resultados.
+
+                  </p>
+              </div>
+          </div>
+      </div>
         
         <!--<div class="container animate-from-right"> -->
 
