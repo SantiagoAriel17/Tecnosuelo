@@ -197,6 +197,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Simular el tiempo de carga
     setTimeout(function() {
         preloader.classList.add('loaded');
-        mainContent.style.display = 'block';
+        mainContent.style.display = 'none';
     }, 2000); // Ajusta el tiempo según tus necesidades (en milisegundos)
 });

@@ -1,7 +1,10 @@
 
 window.addEventListener('load', function () {
-  var preloader = document.getElementById('preloader');
-  preloader.style.display = 'none';
+    // Esperar a que todo el contenido de la página se cargue completamente
+    window.addEventListener('load', function() {
+      // Ocultar el preloader una vez que se ha cargado la página
+      document.getElementById('preloader').style.display = 'none';
+  });
 });
 
 
